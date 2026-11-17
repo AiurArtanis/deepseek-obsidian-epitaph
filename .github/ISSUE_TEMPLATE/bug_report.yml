@@ -1,0 +1,25 @@
+name: 合成样板问题
+description: 报告转换或阅读问题，请使用合成最小复现。
+body:
+  - type: markdown
+    attributes:
+      value: 请勿上传真实对话导出、账号资料或私人附件。当前范围仅支持六组合成样板。
+  - type: input
+    id: environment
+    attributes:
+      label: 环境
+      description: 操作系统、Python 版本；如涉及阅读，请补充 Obsidian 版本和主题。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤与执行命令
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 预期结果、实际结果和错误信息
+    validations:
+      required: true

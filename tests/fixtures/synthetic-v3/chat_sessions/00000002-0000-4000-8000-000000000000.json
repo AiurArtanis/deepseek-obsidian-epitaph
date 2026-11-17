@@ -1,0 +1,71 @@
+{
+  "id": "00000002-0000-4000-8000-000000000000",
+  "title": "合成样例：两张色卡与简单面积公式",
+  "pinned": false,
+  "current_message_id": 2,
+  "inserted_at": "2026-02-01T02:03:04.000Z",
+  "updated_at": "2026-02-01T02:03:07.000Z",
+  "messages": [
+    {
+      "id": 1,
+      "parent_id": null,
+      "role": "USER",
+      "status": "FINISHED",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-02-01T02:03:05.000Z",
+      "fragments": [
+        {
+          "type": "REQUEST",
+          "content": "比较这两张合成色卡，并展示矩形面积公式 \\(A=wh\\)。"
+        },
+        {
+          "type": "FILE",
+          "content": "",
+          "files": [
+            {
+              "id": "10000001-0000-4000-8000-000000000000",
+              "file_name": "色卡.png",
+              "file_size": 214,
+              "token_usage": 0,
+              "inserted_at": "2026-02-01T02:03:04.000Z",
+              "export_path": "chat_sessions/00000002-0000-4000-8000-000000000000_files/10000001-0000-4000-8000-000000000000_色卡.png",
+              "is_image": true,
+              "width": 96,
+              "height": 64
+            },
+            {
+              "id": "10000002-0000-4000-8000-000000000000",
+              "file_name": "色卡.png",
+              "file_size": 215,
+              "token_usage": 0,
+              "inserted_at": "2026-02-01T02:03:04.000Z",
+              "export_path": "chat_sessions/00000002-0000-4000-8000-000000000000_files/10000002-0000-4000-8000-000000000000_色卡.png",
+              "is_image": true,
+              "width": 96,
+              "height": 64
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "parent_id": 1,
+      "role": "ASSISTANT",
+      "status": "FINISHED",
+      "thinking_enabled": true,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-02-01T02:03:06.000Z",
+      "fragments": [
+        {
+          "type": "RESPONSE",
+          "content": "两张图均为脚本生成的条纹色卡。\n\n行内公式 \\(A=wh\\)。\n\n\\[\nA=6\\times4=24\n\\]\n\n内联代码 `\\(keep\\)` 保持原样。\n\n```python\nformula = r'\\[literal\\]'\n```"
+        }
+      ]
+    }
+  ],
+  "synthetic": true
+}

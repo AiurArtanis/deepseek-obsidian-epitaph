@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-17",
+  "images": [
+    {
+      "path": "assets/pics/screenshot.png",
+      "origin": "user-provided-authorized",
+      "bytes": 710202,
+      "dimensions": [
+        1527,
+        2012
+      ],
+      "sha256": "9740cd0ee0e837394a6ba11d2fd5dc0bd0b44f7fd2e9ce326e18a71d4af2995f"
+    },
+    {
+      "path": "assets/pics/obsidian-german-rail.png",
+      "origin": "native-obsidian-electron-capture",
+      "bytes": 322797,
+      "dimensions": [
+        1600,
+        1702
+      ],
+      "sha256": "fb1205a6fa5d941100f017b2f642c34ef09614c3b80bd70211c5471e2ec8ec58"
+    },
+    {
+      "path": "assets/pics/deepseek-obsidian-hug.png",
+      "origin": "built-in-imagegen-targeted-edit",
+      "bytes": 2158016,
+      "dimensions": [
+        1944,
+        809
+      ],
+      "sha256": "f2558817e141a7d446e6a328969f1c4e6c40b6ff414234f5d14444fb601b6dff"
+    }
+  ],
+  "capture": {
+    "tool": "Obsidian CLI eval / Electron webContents.capturePage",
+    "dev_screenshot_status": "exit 4294967295; native Electron fallback used",
+    "note_source_matches_archive_manifest": true,
+    "provided_image_original_bytes_preserved": true,
+    "view_and_sidebar_settings_restored": true,
+    "no_private_conversation_source_files_copied": true,
+    "visual_inspection": "passed: complete dialogue, table and native message footnotes"
+  },
+  "cover": {
+    "tool": "built-in image_gen",
+    "prompt": "references/cover-prompt.txt",
+    "visual_inspection": "passed: cheek mark removed; blush, faces, embrace, hard drive, cards and lettering retained",
+    "edit_tool": "built-in image_gen edit",
+    "edit_prompt": "references/cover-edit-prompt.txt"
+  },
+  "readme_preview": {
+    "status": "passed",
+    "renderer": "GitHub Markdown API GFM HTML; local GitHub-like CSS; Ego Lite Chromium",
+    "widths": [
+      980,
+      360
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "images_loaded": true,
+    "horizontal_page_overflow": false,
+    "original_screenshot_disclosure": "passed",
+    "github_remote_rendering": "GitHub Markdown API passed; site UI is a separate check",
+    "languages": [
+      "zh-CN",
+      "en"
+    ]
+  }
+}

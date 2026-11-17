@@ -1,0 +1,66 @@
+{
+  "id": "00000006-0000-4000-8000-000000000000",
+  "title": "合成样例：缺失文件与内嵌图案",
+  "pinned": false,
+  "current_message_id": 2,
+  "inserted_at": "2026-06-01T02:03:04.000Z",
+  "updated_at": "2026-06-01T02:03:07.000Z",
+  "messages": [
+    {
+      "id": 1,
+      "parent_id": null,
+      "role": "USER",
+      "status": "FINISHED",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-06-01T02:03:05.000Z",
+      "fragments": [
+        {
+          "type": "REQUEST",
+          "content": "请检查这个演示附件；原导出故意不包含文件实体。"
+        },
+        {
+          "type": "FILE",
+          "content": "",
+          "files": [
+            {
+              "id": "20000001-0000-4000-8000-000000000000",
+              "file_name": "合成缺失样式.css",
+              "file_size": 1234,
+              "token_usage": 0,
+              "inserted_at": "2026-06-01T02:03:04.000Z",
+              "export_path": null,
+              "is_image": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "parent_id": 1,
+      "role": "ASSISTANT",
+      "status": "CONTENT_FILTER",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-06-01T02:03:06.000Z",
+      "fragments": [
+        {
+          "type": "TEMPLATE_RESPONSE",
+          "content": "以下为合成模板回复，无法恢复缺失附件。\n\n```css\n.demo { background-image: url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PGNpcmNsZSBjeD0iOCIgY3k9IjgiIHI9IjYiIGZpbGw9IiMzOTY0ZmUiLz48L3N2Zz4=\"); }\n.item-01 { margin: 1px; }\n.item-02 { margin: 2px; }\n.item-03 { margin: 3px; }\n.item-04 { margin: 4px; }\n.item-05 { margin: 5px; }\n.item-06 { margin: 6px; }\n.item-07 { margin: 7px; }\n.item-08 { margin: 8px; }\n.item-09 { margin: 9px; }\n.item-10 { margin: 10px; }\n.item-11 { margin: 11px; }\n.item-12 { margin: 12px; }\n.item-13 { margin: 13px; }\n.item-14 { margin: 14px; }\n.item-15 { margin: 15px; }\n.item-16 { margin: 16px; }\n.item-17 { margin: 17px; }\n.item-18 { margin: 18px; }\n.item-19 { margin: 19px; }\n.item-20 { margin: 20px; }\n.item-21 { margin: 21px; }\n.item-22 { margin: 22px; }\n.item-23 { margin: 23px; }\n.item-24 { margin: 24px; }\n.item-25 { margin: 25px; }\n.item-26 { margin: 26px; }\n.item-27 { margin: 27px; }\n.item-28 { margin: 28px; }\n.item-29 { margin: 29px; }\n.item-30 { margin: 30px; }\n.item-31 { margin: 31px; }\n.item-32 { margin: 32px; }\n.item-33 { margin: 33px; }\n.item-34 { margin: 34px; }\n.item-35 { margin: 35px; }\n.item-36 { margin: 36px; }\n.item-37 { margin: 37px; }\n.item-38 { margin: 38px; }\n.item-39 { margin: 39px; }\n.item-40 { margin: 40px; }\n.item-41 { margin: 41px; }\n.item-42 { margin: 42px; }\n.item-43 { margin: 43px; }\n.item-44 { margin: 44px; }\n.item-45 { margin: 45px; }\n.item-46 { margin: 46px; }\n.item-47 { margin: 47px; }\n.item-48 { margin: 48px; }\n.item-49 { margin: 49px; }\n.item-50 { margin: 50px; }\n.item-51 { margin: 51px; }\n.item-52 { margin: 52px; }\n.item-53 { margin: 53px; }\n.item-54 { margin: 54px; }\n.item-55 { margin: 55px; }\n.item-56 { margin: 56px; }\n.item-57 { margin: 57px; }\n.item-58 { margin: 58px; }\n.item-59 { margin: 59px; }\n.item-60 { margin: 60px; }\n.item-61 { margin: 61px; }\n.item-62 { margin: 62px; }\n.item-63 { margin: 63px; }\n.item-64 { margin: 64px; }\n.item-65 { margin: 65px; }\n.item-66 { margin: 66px; }\n.item-67 { margin: 67px; }\n.item-68 { margin: 68px; }\n.item-69 { margin: 69px; }\n.item-70 { margin: 70px; }\n.item-71 { margin: 71px; }\n.item-72 { margin: 72px; }\n.item-73 { margin: 73px; }\n.item-74 { margin: 74px; }\n.item-75 { margin: 75px; }\n```"
+        },
+        {
+          "type": "CONTENT_RISK",
+          "content": "合成平台状态提示，仅测试呈现。"
+        },
+        {
+          "type": "TIP",
+          "content": "合成提示：此处没有真实用户资料。"
+        }
+      ]
+    }
+  ],
+  "synthetic": true
+}

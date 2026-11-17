@@ -1,0 +1,266 @@
+[
+  {
+    "session_id": "00000001-0000-4000-8000-000000000000",
+    "message_id": 1,
+    "fragment": 1,
+    "type": "REQUEST",
+    "source_sha256": "d7f18ade7a7bbeb7a091d556bc523d579e73124f1b906206e4b6b78f8eb740e4",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000001-0000-4000-8000-000000000000",
+    "message_id": 2,
+    "fragment": 1,
+    "type": "THINK",
+    "source_sha256": "55c2f94f07e132d5b8f9c02f0f346657a1900d23f43f25781aaac809a642538c",
+    "handling": "folded"
+  },
+  {
+    "session_id": "00000001-0000-4000-8000-000000000000",
+    "message_id": 2,
+    "fragment": 2,
+    "type": "TOOL_SEARCH",
+    "source_sha256": "1473fa5c77a74a0d599004be492ecdfd91e2b88e0fa7443ed61524475dfcf0ef",
+    "handling": "folded"
+  },
+  {
+    "session_id": "00000001-0000-4000-8000-000000000000",
+    "message_id": 2,
+    "fragment": 3,
+    "type": "TOOL_OPEN",
+    "source_sha256": "2b073c1e4665429fde413da9237f00f2e3b12fbbacf354d865319a2a3796bf32",
+    "handling": "folded"
+  },
+  {
+    "session_id": "00000001-0000-4000-8000-000000000000",
+    "message_id": 2,
+    "fragment": 4,
+    "type": "TOOL_FIND",
+    "source_sha256": "c6230a580a84cb40c24ebf5d142f798b74011a266ee7372a43d5b35d1699c3bd",
+    "handling": "folded"
+  },
+  {
+    "session_id": "00000001-0000-4000-8000-000000000000",
+    "message_id": 2,
+    "fragment": 5,
+    "type": "RESPONSE",
+    "source_sha256": "eb9b494bb125dd70b59dd69efb1264d9650d1a7f00bb2929f7cd6bf24e648d7a",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000002-0000-4000-8000-000000000000",
+    "message_id": 1,
+    "fragment": 1,
+    "type": "REQUEST",
+    "source_sha256": "a0e04f772aeca279d826c9b650aab119d0f8170440d995343e7f1952128d9835",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000002-0000-4000-8000-000000000000",
+    "message_id": 1,
+    "fragment": 2,
+    "type": "FILE",
+    "source_sha256": "3a9b5f6cb721604cb682fad282b4603b051f760baadde663843f6aa1a3ad9430",
+    "handling": "attachment"
+  },
+  {
+    "session_id": "00000002-0000-4000-8000-000000000000",
+    "message_id": 2,
+    "fragment": 1,
+    "type": "RESPONSE",
+    "source_sha256": "951a83db80dadf77febb5561c32c9f2f8395a94440edcb576e5281030b363697",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000003-0000-4000-8000-000000000000",
+    "message_id": 1,
+    "fragment": 1,
+    "type": "REQUEST",
+    "source_sha256": "52a59ea35a63b1979898ebf89935daa0ea6a65be98e5e99661f3fda6b31f0f97",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000003-0000-4000-8000-000000000000",
+    "message_id": 2,
+    "fragment": 1,
+    "type": "RESPONSE",
+    "source_sha256": "ebe6b415c93cfe7fb15260220dce69941c253bac824e3aed73a7bf5d52e904b3",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000004-0000-4000-8000-000000000000",
+    "message_id": 1,
+    "fragment": 1,
+    "type": "REQUEST",
+    "source_sha256": "106cdd0a8b852e772c0fb6b770687e9bbd3d99c2113349969a1ddd1478b741c2",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000004-0000-4000-8000-000000000000",
+    "message_id": 2,
+    "fragment": 1,
+    "type": "RESPONSE",
+    "source_sha256": "4ae7019e3b9e8a7193ce506d3d245cdd79ec9a87872d1e596c1653ea9fc4e0bd",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000004-0000-4000-8000-000000000000",
+    "message_id": 3,
+    "fragment": 1,
+    "type": "REQUEST",
+    "source_sha256": "9bfa9078e6652208ab9068fddb0e78e485d5c96f233d8fcb2bbf3f3bce027c5c",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000004-0000-4000-8000-000000000000",
+    "message_id": 4,
+    "fragment": 1,
+    "type": "RESPONSE",
+    "source_sha256": "98e68e239e65555b5c7e2c076959b488c696575186b5154606dc00ae031b79ea",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000005-0000-4000-8000-000000000000",
+    "message_id": 1,
+    "fragment": 1,
+    "type": "REQUEST",
+    "source_sha256": "3392b4374e14c107b3866ac910255e3cc21caf72b094b4e0bec4cf3c9b6dfe74",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000005-0000-4000-8000-000000000000",
+    "message_id": 11,
+    "fragment": 1,
+    "type": "RESPONSE",
+    "source_sha256": "d88c9d9ca486674349b56809071a3efb01e527323ac9bdb3f37de94db842230f",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000005-0000-4000-8000-000000000000",
+    "message_id": 12,
+    "fragment": 1,
+    "type": "REQUEST",
+    "source_sha256": "b6d839cb2ef5831f44c6a9dcb2d8673a6cf015acfb158ac09d37c5777df146e9",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000005-0000-4000-8000-000000000000",
+    "message_id": 13,
+    "fragment": 1,
+    "type": "RESPONSE",
+    "source_sha256": "a9246a35a95cb524ccfc74d1f137de296670f80f19c93da0688e49946c01a80d",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000005-0000-4000-8000-000000000000",
+    "message_id": 2,
+    "fragment": 1,
+    "type": "RESPONSE",
+    "source_sha256": "1bbc446fe68f611a9e2e50c680b4523651451285758098d5a88a4849619d0564",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000005-0000-4000-8000-000000000000",
+    "message_id": 3,
+    "fragment": 1,
+    "type": "RESPONSE",
+    "source_sha256": "1d835b921fd6b225bcebd324f4c5a2f535677eb0f6fd631a5de18be8514cce9a",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000005-0000-4000-8000-000000000000",
+    "message_id": 4,
+    "fragment": 1,
+    "type": "RESPONSE",
+    "source_sha256": "eaebcf4354bfb48bf1f77a5dc8e1308d62fb264134c9c8b59223d9f71fd09c39",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000005-0000-4000-8000-000000000000",
+    "message_id": 5,
+    "fragment": 1,
+    "type": "RESPONSE",
+    "source_sha256": "6516cee37a2b376f9d12df7d5cf4f9c8fe666ab8f3685ad28f90a7b7da9c2690",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000005-0000-4000-8000-000000000000",
+    "message_id": 6,
+    "fragment": 1,
+    "type": "RESPONSE",
+    "source_sha256": "7fca1ff319df4cf93feee91b2b1237e4ead6f44f447a8274b10738a7cbc59444",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000005-0000-4000-8000-000000000000",
+    "message_id": 7,
+    "fragment": 1,
+    "type": "RESPONSE",
+    "source_sha256": "9aa00a993ea104c5ba079bed9be01cfa36ae04b4552a0f6d1eb727c582c3ca4c",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000005-0000-4000-8000-000000000000",
+    "message_id": 8,
+    "fragment": 1,
+    "type": "RESPONSE",
+    "source_sha256": "e4baa0c6fd0053f89645d517a4d4d723ca2720665dcbf7c7bb88f9817d39b83f",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000005-0000-4000-8000-000000000000",
+    "message_id": 9,
+    "fragment": 1,
+    "type": "RESPONSE",
+    "source_sha256": "8e014969ed63bee5c76b627ce665515d9b5e3d5e09bdc9246c84b2a529fce02b",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000005-0000-4000-8000-000000000000",
+    "message_id": 10,
+    "fragment": 1,
+    "type": "RESPONSE",
+    "source_sha256": "f67b8c6df9a96da394a963cb1589a4a50598af7240b14762bc84bc67b77b8081",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000006-0000-4000-8000-000000000000",
+    "message_id": 1,
+    "fragment": 1,
+    "type": "REQUEST",
+    "source_sha256": "99a0b97a501df912cc66ec5e3cda09d59714c0187405d81c1ce9191e9eaf0828",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000006-0000-4000-8000-000000000000",
+    "message_id": 1,
+    "fragment": 2,
+    "type": "FILE",
+    "source_sha256": "3cb46a3332ffbcb287ac4b9c4251b15b8902d7cab3e307dc5cde8cbbfc833e81",
+    "handling": "attachment"
+  },
+  {
+    "session_id": "00000006-0000-4000-8000-000000000000",
+    "message_id": 2,
+    "fragment": 1,
+    "type": "TEMPLATE_RESPONSE",
+    "source_sha256": "edec863bb6a3bcadcff3cdf9e7e71db0698a0a562380baf43bcd1fa9d938f486",
+    "handling": "body"
+  },
+  {
+    "session_id": "00000006-0000-4000-8000-000000000000",
+    "message_id": 2,
+    "fragment": 2,
+    "type": "CONTENT_RISK",
+    "source_sha256": "990aa6978dea317d38606702d338c852c3cd508f7ad22bcda7bb4a0b8af52e96",
+    "handling": "folded"
+  },
+  {
+    "session_id": "00000006-0000-4000-8000-000000000000",
+    "message_id": 2,
+    "fragment": 3,
+    "type": "TIP",
+    "source_sha256": "0af2a57f79d9bab8c67c63a05e2f1388965ec8c4cff35ce65c188c73229e7d16",
+    "handling": "folded"
+  }
+]

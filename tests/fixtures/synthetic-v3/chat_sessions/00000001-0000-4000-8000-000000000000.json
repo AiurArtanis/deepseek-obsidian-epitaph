@@ -1,0 +1,79 @@
+{
+  "id": "00000001-0000-4000-8000-000000000000",
+  "title": "合成样例：纸船与风车的材料比较",
+  "pinned": true,
+  "current_message_id": 2,
+  "inserted_at": "2026-01-01T02:03:04.000Z",
+  "updated_at": "2026-01-01T02:03:07.000Z",
+  "messages": [
+    {
+      "id": 1,
+      "parent_id": null,
+      "role": "USER",
+      "status": "FINISHED",
+      "thinking_enabled": false,
+      "search_enabled": true,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-01-01T02:03:05.000Z",
+      "fragments": [
+        {
+          "type": "REQUEST",
+          "content": "请用表格比较纸船与风车两种课堂手工作品需要的材料、制作步骤和展示方式，并保留引用记录。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "parent_id": 1,
+      "role": "ASSISTANT",
+      "status": "FINISHED",
+      "thinking_enabled": true,
+      "search_enabled": true,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-01-01T02:03:06.000Z",
+      "fragments": [
+        {
+          "type": "THINK",
+          "content": "这是人工编写的思考片段，用于检验折叠展示。",
+          "elapsed_secs": 1.5
+        },
+        {
+          "type": "TOOL_SEARCH",
+          "content": "",
+          "queries": [
+            "合成手工材料表"
+          ],
+          "status": "FINISHED",
+          "stage_id": 1,
+          "results": [
+            {
+              "url": "https://example.com/craft",
+              "title": "合成资料页",
+              "site_name": "示例站点",
+              "snippet": "虚构材料说明，不是实际检索结果。"
+            }
+          ]
+        },
+        {
+          "type": "TOOL_OPEN",
+          "content": "",
+          "url": "https://example.com/craft",
+          "title": "合成资料页",
+          "snippet": "纸张与木棒。",
+          "status": "FINISHED"
+        },
+        {
+          "type": "TOOL_FIND",
+          "content": "",
+          "pattern": "材料",
+          "status": "FINISHED"
+        },
+        {
+          "type": "RESPONSE",
+          "content": "# 材料比较\n\n| 作品 | 材料 | 展示 |\n|---|---|---|\n| 纸船 | 彩纸 | 水盆 |\n| 风车 | 纸、木棒 | 窗边 |\n\n- 先准备材料。\n- 再完成折叠。\n\n> 所有内容均为演示数据。\n\n第一行<br>第二行。"
+        }
+      ]
+    }
+  ],
+  "synthetic": true
+}

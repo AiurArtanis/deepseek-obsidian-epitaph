@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "sessions": 6,
+  "messages": 25,
+  "fragments": 33,
+  "checks": [
+    "all messages represented once",
+    "all fragments accounted for",
+    "raw GZIP roundtrip and SHA256",
+    "attachment SHA256",
+    "generated internal links resolve",
+    "no inline encoded image data in Markdown"
+  ],
+  "visual_verification": "not-run; use scripts/check_obsidian.py on an explicitly opened demo vault",
+  "source_files_unchanged": 11
+}

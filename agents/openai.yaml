@@ -1,0 +1,4 @@
+interface:
+  display_name: "DeepSeek 的 Obsidian 墓志铭"
+  short_description: "将 AI 聊天导出转为 Obsidian 笔记库，先审核样板，再完整保留问答与附件"
+  default_prompt: "请使用 $deepseek-obsidian-epitaph 检查我的 AI 聊天导出，先生成 Obsidian 样板供我审核，确认后再转换全量并核对完整性。"

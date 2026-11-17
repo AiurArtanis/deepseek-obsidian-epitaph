@@ -1,0 +1,219 @@
+{
+  "id": "00000005-0000-4000-8000-000000000000",
+  "title": "合成样例：保留重试及历史分支",
+  "pinned": false,
+  "current_message_id": 13,
+  "inserted_at": "2026-05-01T02:03:04.000Z",
+  "updated_at": "2026-05-01T02:03:18.000Z",
+  "messages": [
+    {
+      "id": 1,
+      "parent_id": null,
+      "role": "USER",
+      "status": "FINISHED",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-05-01T02:03:05.000Z",
+      "fragments": [
+        {
+          "type": "REQUEST",
+          "content": "请为虚构的纸艺活动提供三个简短名称。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "parent_id": 1,
+      "role": "ASSISTANT",
+      "status": "TIMEOUT",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-05-01T02:03:06.000Z",
+      "fragments": [
+        {
+          "type": "RESPONSE",
+          "content": "第 1 次合成尝试仅保存了这句片段。"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parent_id": 1,
+      "role": "ASSISTANT",
+      "status": "TIMEOUT",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-05-01T02:03:07.000Z",
+      "fragments": [
+        {
+          "type": "RESPONSE",
+          "content": "第 2 次合成尝试仅保存了这句片段。"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "parent_id": 1,
+      "role": "ASSISTANT",
+      "status": "TIMEOUT",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-05-01T02:03:08.000Z",
+      "fragments": [
+        {
+          "type": "RESPONSE",
+          "content": "第 3 次合成尝试仅保存了这句片段。"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parent_id": 1,
+      "role": "ASSISTANT",
+      "status": "TIMEOUT",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-05-01T02:03:09.000Z",
+      "fragments": [
+        {
+          "type": "RESPONSE",
+          "content": "第 4 次合成尝试仅保存了这句片段。"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parent_id": 1,
+      "role": "ASSISTANT",
+      "status": "TIMEOUT",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-05-01T02:03:10.000Z",
+      "fragments": [
+        {
+          "type": "RESPONSE",
+          "content": "第 5 次合成尝试仅保存了这句片段。"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "parent_id": 1,
+      "role": "ASSISTANT",
+      "status": "TIMEOUT",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-05-01T02:03:11.000Z",
+      "fragments": [
+        {
+          "type": "RESPONSE",
+          "content": "第 6 次合成尝试仅保存了这句片段。"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "parent_id": 1,
+      "role": "ASSISTANT",
+      "status": "TIMEOUT",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-05-01T02:03:12.000Z",
+      "fragments": [
+        {
+          "type": "RESPONSE",
+          "content": "第 7 次合成尝试仅保存了这句片段。"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "parent_id": 1,
+      "role": "ASSISTANT",
+      "status": "TIMEOUT",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-05-01T02:03:13.000Z",
+      "fragments": [
+        {
+          "type": "RESPONSE",
+          "content": "第 8 次合成尝试仅保存了这句片段。"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "parent_id": 1,
+      "role": "ASSISTANT",
+      "status": "TIMEOUT",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-05-01T02:03:14.000Z",
+      "fragments": [
+        {
+          "type": "RESPONSE",
+          "content": "第 9 次合成尝试仅保存了这句片段。"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "parent_id": 1,
+      "role": "ASSISTANT",
+      "status": "FINISHED",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-05-01T02:03:15.000Z",
+      "fragments": [
+        {
+          "type": "RESPONSE",
+          "content": "1. 折纸时光\n2. 纸间漫游\n3. 彩纸工坊"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "parent_id": 11,
+      "role": "USER",
+      "status": "FINISHED",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-05-01T02:03:16.000Z",
+      "fragments": [
+        {
+          "type": "REQUEST",
+          "content": "请为第二个名称补一句活动简介。"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "parent_id": 12,
+      "role": "ASSISTANT",
+      "status": "INCOMPLETE",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-05-01T02:03:17.000Z",
+      "fragments": [
+        {
+          "type": "RESPONSE",
+          "content": "纸间漫游：用折叠和想象……"
+        }
+      ]
+    }
+  ],
+  "synthetic": true
+}

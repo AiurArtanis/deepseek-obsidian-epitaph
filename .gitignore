@@ -1,0 +1,15 @@
+# Local inputs and outputs; publish only synthetic fixtures and examples.
+/input/
+/private/
+/output/
+/scratch/
+/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+Thumbs.db
+.obsidian/workspace*.json
+.obsidian/cache/
+.env
+.env.*

@@ -1,0 +1,43 @@
+{
+  "id": "00000003-0000-4000-8000-000000000000",
+  "title": "合成样例：HTML 卡片源码",
+  "pinned": false,
+  "current_message_id": 2,
+  "inserted_at": "2026-03-01T02:03:04.000Z",
+  "updated_at": "2026-03-01T02:03:07.000Z",
+  "messages": [
+    {
+      "id": 1,
+      "parent_id": null,
+      "role": "USER",
+      "status": "FINISHED",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-03-01T02:03:05.000Z",
+      "fragments": [
+        {
+          "type": "REQUEST",
+          "content": "<section class=\"demo\">\n  <h2>合成卡片</h2>\n  <p>只供源码展示。</p>\n</section>\n\n请解释这段 HTML。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "parent_id": 1,
+      "role": "ASSISTANT",
+      "status": "FINISHED",
+      "thinking_enabled": false,
+      "search_enabled": false,
+      "accumulated_token_usage": 0,
+      "inserted_at": "2026-03-01T02:03:06.000Z",
+      "fragments": [
+        {
+          "type": "RESPONSE",
+          "content": "这是一个静态卡片。\n\n```html\n<!doctype html>\n<html lang=\"zh-CN\">\n<head><meta charset=\"utf-8\"><title>合成卡片</title></head>\n<body><section><h2>合成卡片</h2><p>示例文本</p></section></body>\n</html>\n```"
+        }
+      ]
+    }
+  ],
+  "synthetic": true
+}

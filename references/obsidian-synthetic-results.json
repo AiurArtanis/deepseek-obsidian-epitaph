@@ -1,0 +1,313 @@
+{
+  "passed": true,
+  "obsidian": "1.15.1 (installer 1.15.0)",
+  "samples": [
+    {
+      "file": "2026-06/2026-06-01/【100304】 合成样例：缺失文件与内嵌图案.md",
+      "title": "合成样例：缺失文件与内嵌图案",
+      "footnotes": [
+        "msg-1",
+        "msg-2"
+      ],
+      "footnoteRefs": [
+        "msg-1",
+        "msg-2"
+      ],
+      "footnoteLinks": 4,
+      "userBubble": "rgb(237, 243, 254)",
+      "aiTitleColor": "rgb(57, 100, 254)",
+      "aiIcon": "\"🐋\"",
+      "userAlignment": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "roundHeadings": [
+        "第 01 轮 · 请检查这个演示附件；原导出故意不包含文件实体。"
+      ],
+      "removedProperties": [],
+      "tables": 0,
+      "codeBlocks": 2,
+      "math": 0,
+      "mathErrors": 0,
+      "images": [],
+      "checks": {
+        "footnote_definitions": true,
+        "footnote_references": true,
+        "user_background": true,
+        "deepseek_title": true,
+        "whale_icon": true,
+        "right_alignment": true,
+        "round_title_limit": true,
+        "math": true,
+        "removed_properties": true
+      },
+      "passed": true
+    },
+    {
+      "file": "2026-01/2026-01-01/【100304】 合成样例：纸船与风车的材料比较.md",
+      "title": "合成样例：纸船与风车的材料比较",
+      "footnotes": [
+        "msg-1",
+        "msg-2"
+      ],
+      "footnoteRefs": [
+        "msg-1",
+        "msg-2"
+      ],
+      "footnoteLinks": 4,
+      "userBubble": "rgb(237, 243, 254)",
+      "aiTitleColor": "rgb(57, 100, 254)",
+      "aiIcon": "\"🐋\"",
+      "userAlignment": [
+        "right",
+        "right",
+        "right"
+      ],
+      "roundHeadings": [
+        "第 01 轮 · 请用表格比较纸船与风车两种课堂手工作品需要的材料、制作步骤和…"
+      ],
+      "removedProperties": [],
+      "tables": 1,
+      "codeBlocks": 2,
+      "math": 0,
+      "mathErrors": 0,
+      "images": [],
+      "checks": {
+        "footnote_definitions": true,
+        "footnote_references": true,
+        "user_background": true,
+        "deepseek_title": true,
+        "whale_icon": true,
+        "right_alignment": true,
+        "round_title_limit": true,
+        "math": true,
+        "removed_properties": true
+      },
+      "passed": true
+    },
+    {
+      "file": "2026-02/2026-02-01/【100304】 合成样例：两张色卡与简单面积公式.md",
+      "title": "合成样例：两张色卡与简单面积公式",
+      "footnotes": [
+        "msg-1",
+        "msg-2"
+      ],
+      "footnoteRefs": [
+        "msg-1",
+        "msg-2"
+      ],
+      "footnoteLinks": 4,
+      "userBubble": "rgb(237, 243, 254)",
+      "aiTitleColor": "rgb(57, 100, 254)",
+      "aiIcon": "\"🐋\"",
+      "userAlignment": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "roundHeadings": [
+        "第 01 轮 · 比较这两张合成色卡，并展示矩形面积公式 (A=wh)。"
+      ],
+      "removedProperties": [],
+      "tables": 0,
+      "codeBlocks": 2,
+      "math": 3,
+      "mathErrors": 0,
+      "images": [
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        }
+      ],
+      "checks": {
+        "footnote_definitions": true,
+        "footnote_references": true,
+        "user_background": true,
+        "deepseek_title": true,
+        "whale_icon": true,
+        "right_alignment": true,
+        "round_title_limit": true,
+        "math": true,
+        "removed_properties": true
+      },
+      "passed": true
+    },
+    {
+      "file": "2026-05/2026-05-01/【100304】 合成样例：保留重试及历史分支.md",
+      "title": "合成样例：保留重试及历史分支",
+      "footnotes": [
+        "msg-1",
+        "msg-11",
+        "msg-12",
+        "msg-13",
+        "msg-2",
+        "msg-3",
+        "msg-4",
+        "msg-5",
+        "msg-6",
+        "msg-7",
+        "msg-8",
+        "msg-9",
+        "msg-10"
+      ],
+      "footnoteRefs": [
+        "msg-1",
+        "msg-11",
+        "msg-12",
+        "msg-13",
+        "msg-2",
+        "msg-1",
+        "msg-3",
+        "msg-1",
+        "msg-4",
+        "msg-1",
+        "msg-5",
+        "msg-1",
+        "msg-6",
+        "msg-1",
+        "msg-7",
+        "msg-1",
+        "msg-8",
+        "msg-1",
+        "msg-9",
+        "msg-1",
+        "msg-10",
+        "msg-1"
+      ],
+      "footnoteLinks": 16,
+      "userBubble": "rgb(237, 243, 254)",
+      "aiTitleColor": "rgb(57, 100, 254)",
+      "aiIcon": "\"🐋\"",
+      "userAlignment": [
+        "right",
+        "right",
+        "right"
+      ],
+      "roundHeadings": [
+        "第 01 轮 · 请为虚构的纸艺活动提供三个简短名称。",
+        "第 02 轮 · 请为第二个名称补一句活动简介。"
+      ],
+      "removedProperties": [],
+      "tables": 0,
+      "codeBlocks": 1,
+      "math": 0,
+      "mathErrors": 0,
+      "images": [],
+      "checks": {
+        "footnote_definitions": true,
+        "footnote_references": true,
+        "user_background": true,
+        "deepseek_title": true,
+        "whale_icon": true,
+        "right_alignment": true,
+        "round_title_limit": true,
+        "math": true,
+        "removed_properties": true
+      },
+      "passed": true
+    },
+    {
+      "file": "2026-04/2026-04-01/【100304】 合成样例：分两轮调整展示列表.md",
+      "title": "合成样例：分两轮调整展示列表",
+      "footnotes": [
+        "msg-1",
+        "msg-2",
+        "msg-3",
+        "msg-4"
+      ],
+      "footnoteRefs": [
+        "msg-1",
+        "msg-2",
+        "msg-3",
+        "msg-4"
+      ],
+      "footnoteLinks": 8,
+      "userBubble": "rgb(237, 243, 254)",
+      "aiTitleColor": "rgb(57, 100, 254)",
+      "aiIcon": "\"🐋\"",
+      "userAlignment": [
+        "right",
+        "right",
+        "right"
+      ],
+      "roundHeadings": [
+        "第 01 轮 · 请生成包含八十个合成条目的静态列表页面，用来测试长代码折叠和…",
+        "第 02 轮 · 请再提供一段可读的列表样式。"
+      ],
+      "removedProperties": [],
+      "tables": 0,
+      "codeBlocks": 3,
+      "math": 0,
+      "mathErrors": 0,
+      "images": [],
+      "checks": {
+        "footnote_definitions": true,
+        "footnote_references": true,
+        "user_background": true,
+        "deepseek_title": true,
+        "whale_icon": true,
+        "right_alignment": true,
+        "round_title_limit": true,
+        "math": true,
+        "removed_properties": true
+      },
+      "passed": true
+    },
+    {
+      "file": "2026-03/2026-03-01/【100304】 合成样例：HTML 卡片源码.md",
+      "title": "合成样例：HTML 卡片源码",
+      "footnotes": [
+        "msg-1",
+        "msg-2"
+      ],
+      "footnoteRefs": [
+        "msg-1",
+        "msg-2"
+      ],
+      "footnoteLinks": 4,
+      "userBubble": "rgb(237, 243, 254)",
+      "aiTitleColor": "rgb(57, 100, 254)",
+      "aiIcon": "\"🐋\"",
+      "userAlignment": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "roundHeadings": [
+        "第 01 轮 · 请解释这段 HTML。"
+      ],
+      "removedProperties": [],
+      "tables": 0,
+      "codeBlocks": 3,
+      "math": 0,
+      "mathErrors": 0,
+      "images": [],
+      "checks": {
+        "footnote_definitions": true,
+        "footnote_references": true,
+        "user_background": true,
+        "deepseek_title": true,
+        "whale_icon": true,
+        "right_alignment": true,
+        "round_title_limit": true,
+        "math": true,
+        "removed_properties": true
+      },
+      "passed": true
+    }
+  ]
+}

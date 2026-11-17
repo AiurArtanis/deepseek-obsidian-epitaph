@@ -1,0 +1,6 @@
+{
+  "types": {
+    "created": "datetime",
+    "updated": "datetime"
+  }
+}

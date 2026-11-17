@@ -1,0 +1,53 @@
+{
+  "export_format_version": 3,
+  "sessions": 6,
+  "branch_sessions": 1,
+  "non_current_messages": 9,
+  "messages": 25,
+  "attachment_references": 3,
+  "existing_attachments": 2,
+  "missing_attachments": 1,
+  "missing_attachment_records": [
+    {
+      "session_id": "00000006-0000-4000-8000-000000000000",
+      "title": "合成样例：缺失文件与内嵌图案",
+      "message_id": 1,
+      "file_id": "20000001-0000-4000-8000-000000000000",
+      "file_name": "合成缺失样式.css",
+      "file_size": 1234,
+      "export_path": null
+    }
+  ],
+  "status_counts": {
+    "FINISHED": 14,
+    "TIMEOUT": 9,
+    "INCOMPLETE": 1,
+    "CONTENT_FILTER": 1
+  },
+  "fragment_counts": {
+    "REQUEST": 8,
+    "THINK": 1,
+    "TOOL_SEARCH": 1,
+    "TOOL_OPEN": 1,
+    "TOOL_FIND": 1,
+    "RESPONSE": 16,
+    "FILE": 2,
+    "TEMPLATE_RESPONSE": 1,
+    "CONTENT_RISK": 1,
+    "TIP": 1
+  },
+  "months": {
+    "2026-01": 1,
+    "2026-02": 1,
+    "2026-03": 1,
+    "2026-04": 1,
+    "2026-05": 1,
+    "2026-06": 1
+  },
+  "index_mismatches": [],
+  "attachment_size_mismatches": [],
+  "source_files": 11,
+  "source_total_bytes": 21915,
+  "earliest_utc": "2026-01-01T02:03:04.000Z",
+  "latest_utc": "2026-06-01T02:03:04.000Z"
+}

@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-17",
+  "version": "1.0.0",
+  "environment": {
+    "system": "Windows",
+    "python": "3.14.5",
+    "obsidian": "1.15.1 (installer 1.15.0)"
+  },
+  "offline_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 31,
+    "failed": 0
+  },
+  "skill_validation": {
+    "passed": true,
+    "method": "skill-creator quick_validate.py with UTF-8"
+  },
+  "synthetic_generation": {
+    "sessions": 6,
+    "messages": 25,
+    "fragments": 33,
+    "images": 2,
+    "missing_attachment_records": 1
+  },
+  "public_content_check": {
+    "status": "run by scripts/check_public_content.py before commit and on every CI run",
+    "scope": [
+      "synthetic fixture reproduction",
+      "example vault reproduction",
+      "non-synthetic IDs and machine paths",
+      "encoded image data in Markdown",
+      "version file checksums"
+    ]
+  },
+  "private_source_regression": {
+    "passed": true,
+    "scope": "same previously approved output format; local regression only; original export and output are excluded from repository",
+    "totals": {
+      "main_messages": 2634,
+      "historical_messages": 328,
+      "sessions_with_historical_messages": 55,
+      "branch_sessions": 55,
+      "messages": 2962,
+      "fragments": 6465,
+      "attachment_records": 212,
+      "copied_attachment_records": 171,
+      "source_missing_attachments": 41,
+      "sessions": 521,
+      "source_files": 695,
+      "unique_original_attachments": 171
+    },
+    "checks": [
+      "export index and dated-note coverage",
+      "all message parent chains including historical branches",
+      "each message rendered once and SHA256 verified",
+      "all fragment source hashes",
+      "one native footnote per message",
+      "all original attachments byte-for-byte and metadata sizes",
+      "source missing attachments explicitly marked",
+      "raw conversation JSON lossless roundtrip",
+      "source inventory unchanged and no orphan attachment",
+      "generated resources and file hashes"
+    ],
+    "failures": []
+  },
+  "obsidian_rendering": {
+    "passed": true,
+    "synthetic_samples": 6,
+    "record": "references/obsidian-synthetic-results.json",
+    "visual_screenshot_review": "passed",
+    "native_metadata_full_archive": {
+      "passed": true,
+      "conversations": 521,
+      "markdownFiles": 526,
+      "footnotes": 2962,
+      "uniqueMessageFootnoteReferences": 2962,
+      "attachments": 171,
+      "rounds": 1317,
+      "unresolved": 0,
+      "failed": []
+    },
+    "limitation": "Six synthetic notes rendered and inspected by CLI; full archive checked through native metadata cache, not every viewport visually reviewed."
+  },
+  "readme_presentation": {
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "assets": 3,
+    "renderer": "GitHub Markdown API with local preview CSS in Ego Lite",
+    "widths": [
+      980,
+      360
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "images_loaded": true,
+    "horizontal_overflow": false,
+    "visual_review": "passed",
+    "original_screenshot_disclosure": "passed"
+  },
+  "remote_repository": {
+    "url": "https://github.com/AiurArtanis/deepseek-obsidian-epitaph",
+    "visibility": "private",
+    "ci": "See GitHub Actions for commit-specific remote verification."
+  },
+  "limits": [
+    "No native parsers for other AI providers are bundled; inspect and implement an adapter first.",
+    "No NAS deployment, sync, summaries or knowledge extraction.",
+    "No open-source license selected."
+  ]
+}

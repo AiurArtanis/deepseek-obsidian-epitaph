@@ -1,0 +1,23 @@
+[
+  {
+    "kind": "generated-code",
+    "path": "_附件/00000003-0000-4000-8000-000000000000/代码/m2-f1-code1.html",
+    "sha256": "aa8ded8963488eb25a260205ab6f6ae06285365a6cef0311b5e20b76eba4a880"
+  },
+  {
+    "kind": "generated-code",
+    "path": "_附件/00000004-0000-4000-8000-000000000000/代码/m2-f1-code1.html",
+    "sha256": "18b3daafd80db1e75ab8341e563e6dbf891c4552b6a4e43b066ea2c4bd43d8c2"
+  },
+  {
+    "kind": "embedded",
+    "path": "_附件/00000006-0000-4000-8000-000000000000/内嵌资源/6323f5439a7050f00310.svg",
+    "mime": "image/svg+xml",
+    "sha256": "6323f5439a7050f003100a8f8faeac2eb1c6cc023fc6ebd8f437e40bed9a5c24"
+  },
+  {
+    "kind": "generated-code",
+    "path": "_附件/00000006-0000-4000-8000-000000000000/代码/m2-f1-code1.css",
+    "sha256": "df3b3a4f0b10d048276f576a133057b58c60d79105b6846b900808d92c73d602"
+  }
+]
