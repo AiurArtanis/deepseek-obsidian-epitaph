@@ -26,6 +26,8 @@ python scripts/convert.py demo --source INPUT --dest WORK/review-vault
 
 沿用 [笔记格式](references/vault-format.md)：一段会话一篇笔记，年月/创建日期目录、`【时分秒】 标题.md`、原生属性、角色 callout、40 字轮次标题、标准脚注、历史分支折叠、附件与原始 JSON 同库保存。
 
+每条 AI 回答末尾用列表展示该消息的网页来源，保留顺序并按 URL 去重；没有来源时不补造。历史分支独立整理；原导出缺少逐句引用映射时不猜测编号关系。
+
 DeepSeek 使用 `chat-ai-deepseek`、🐋、`#3964fe`。其他来源使用 `chat-ai-<实际来源 slug>`，替换来源名、图标和标题色；优先合适的 emoji 或现有 icon，没有合适选择时用 `lucide-sparkles`。其余格式保持一致；用户框为 `#edf3fe`、整框右对齐。
 
 按 [验证说明](references/verification.md) 读取核验记录并检查真实 Obsidian 阅读视图。优先官方 CLI；含反斜杠、公式和长代码的 Markdown 由脚本写文件，避免 CLI 内容参数转义。CLI 不可用时继续结构核验，并明确视觉检查未完成，不自行降级到桌面自动化。

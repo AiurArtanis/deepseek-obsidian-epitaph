@@ -9,6 +9,8 @@ import json
 import pathlib
 import re
 import sys
+from urllib.parse import quote
+from web_sources import collect_sources
 
 
 def sha(data): return hashlib.sha256(data).hexdigest()
@@ -100,6 +102,13 @@ def verify(source, vault):
             check(audit.get('parent_id')==m['parent_id'] and audit.get('role')==m['role'] and audit.get('status')==m['status'],sid+f': message m{mid} metadata')
             check(audit.get('historical')==(mid in alternate),sid+f': message m{mid} branch flag')
             check(sha(chunks.get(mid,'').encode())==audit.get('rendered_sha256'),sid+f': message m{mid} rendered hash')
+            sources=collect_sources(m)
+            expected_urls=[quote(entry['url'],safe='/:?=&%#@+~!$;,*-._') for entry in sources]
+            footer=re.search(r'^> \*\*参考网页 · (\d+) 个\*\*\n.*?\n>\n((?:> \d+\. .*\n?)+)',chunks.get(mid,''),re.M|re.S)
+            actual_urls=re.findall(r'^> \d+\. \[.*\]\(<([^>]+)>\)',footer[2],re.M) if footer else []
+            check(actual_urls==expected_urls,sid+f': message m{mid} web source coverage/order')
+            check((int(footer[1]) if footer else 0)==len(expected_urls),sid+f': message m{mid} web source count')
+            totals['web_source_entries']+=len(sources)
             parent=f"父消息：m{m['parent_id']}" if m['parent_id'] is not None else '父消息：无（会话起点）'
             check(parent in foot_defs.get(mid,''),sid+f': message m{mid} parent footnote')
             for fi,f in enumerate(m['fragments'],1):
@@ -173,7 +182,8 @@ def verify(source, vault):
             'generated_file_hashes_checked':checked,'obsidian_config_changes':configs,'failures':failures,
             'checks':['export index and dated-note coverage','all message parent chains including historical branches',
                       'each message rendered once and SHA256 verified','all fragment source hashes',
-                      'one native footnote per message','all original attachments byte-for-byte and metadata sizes',
+                      'one native footnote per message','per-message web source coverage and order',
+                      'all original attachments byte-for-byte and metadata sizes',
                       'source missing attachments explicitly marked','raw conversation JSON lossless roundtrip',
                       'source inventory unchanged and no orphan attachment','generated resources and file hashes'],
             'limitation':'Archive integrity does not validate historical facts, source code behavior, or visual rendering.'}

@@ -7,13 +7,13 @@ python -m unittest discover -s tests -v
 python scripts/check_public_content.py
 ```
 
-测试覆盖合成归档、任意会话与全量范围、样板确认约束、输入/品牌变更、历史分支环、异常记录、规范化来源及 spark 回退、源数据还原、附件损坏检测和覆盖保护。
+测试覆盖合成归档、任意会话与全量范围、样板确认约束、输入/品牌变更、历史分支环、异常记录、规范化来源及 spark 回退、源数据还原、附件损坏检测和覆盖保护。网页来源另核对逐条回答的顺序与去重、历史分支隔离、代码与图片排除、引用式链接，以及来源列表被篡改时的检出。
 
 ```sh
 python scripts/verify_vault.py --source INPUT --vault OUTPUT --report WORK/verification.json
 ```
 
-独立核验从落盘结果重新核对消息和片段、主线/分支、父子关系、角色块哈希、脚注、附件字节/大小、原 JSON 还原、源文件不变及生成文件哈希。Obsidian 会改写自身 JSON 配置，配置变化单独记录；正文与 CSS 严格核对。
+独立核验从落盘结果重新核对消息和片段、主线/分支、父子关系、角色块哈希、脚注、每条回答的网页来源覆盖与顺序、附件字节/大小、原 JSON 还原、源文件不变及生成文件哈希。Obsidian 会改写自身 JSON 配置，配置变化单独记录；正文与 CSS 严格核对。
 
 ## Obsidian 原生验证
 

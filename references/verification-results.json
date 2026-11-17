@@ -1,6 +1,6 @@
 {
   "date": "2026-11-17",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "environment": {
     "system": "Windows",
     "python": "3.14.5",
@@ -8,8 +8,12 @@
   },
   "offline_tests": {
     "command": "python -m unittest discover -s tests -v",
-    "passed": 34,
-    "failed": 0
+    "passed": 40,
+    "failed": 0,
+    "python_versions": [
+      "3.13.5",
+      "3.14.5"
+    ]
   },
   "skill_validation": {
     "passed": true,
@@ -34,7 +38,7 @@
   },
   "private_source_regression": {
     "passed": true,
-    "scope": "same previously approved output format; local regression only; original export and output are excluded from repository",
+    "scope": "Historical full-import baseline; not rerun against the 1.1.0 footer template. Private exports and vaults remain outside the repository.",
     "totals": {
       "main_messages": 2634,
       "historical_messages": 328,
@@ -61,7 +65,9 @@
       "source inventory unchanged and no orphan attachment",
       "generated resources and file hashes"
     ],
-    "failures": []
+    "failures": [],
+    "version": "1.0.0",
+    "baseline_commit": "d1ed26c904e4be68feb67df3112f154c00309aab"
   },
   "obsidian_rendering": {
     "passed": true,
@@ -79,7 +85,9 @@
       "unresolved": 0,
       "failed": []
     },
-    "limitation": "Six synthetic notes rendered and inspected by CLI; full archive checked through native metadata cache, not every viewport visually reviewed."
+    "limitation": "Six synthetic notes rendered and inspected by CLI; full archive checked through native metadata cache, not every viewport visually reviewed.",
+    "version": "1.0.0",
+    "scope": "Historical six-sample and full metadata baseline; current footer verification is recorded separately."
   },
   "readme_presentation": {
     "languages": [
@@ -87,7 +95,7 @@
       "en"
     ],
     "assets": 3,
-    "renderer": "GitHub Markdown API with local preview CSS in Ego Lite",
+    "renderer": "GitHub Markdown API HTML and Obsidian-rendered Mermaid SVG, local CSS in Ego Lite",
     "widths": [
       980,
       360
@@ -99,7 +107,13 @@
     "images_loaded": true,
     "horizontal_overflow": false,
     "visual_review": "passed",
-    "original_screenshot_disclosure": "passed"
+    "original_screenshot_disclosure": "passed",
+    "cases": 8,
+    "mermaid_languages_rendered": [
+      "zh-CN",
+      "en"
+    ],
+    "remote_site": "Separate post-push check; see GitHub Actions for commit-specific CI."
   },
   "remote_repository": {
     "url": "https://github.com/AiurArtanis/deepseek-obsidian-epitaph",
@@ -107,8 +121,27 @@
     "ci": "See GitHub Actions for commit-specific remote verification."
   },
   "limits": [
-    "No native parsers for other AI providers are bundled; inspect and implement an adapter first.",
-    "No NAS deployment, sync, summaries or knowledge extraction.",
+    "Other AI providers require an adapter after export-field inspection.",
+    "Conversion only; additional tools and human review are needed for sync, knowledge extraction and retrieval Q&A.",
     "No open-source license selected."
-  ]
+  ],
+  "web_source_revision": {
+    "version": "1.1.0",
+    "passed": true,
+    "dedicated_tests": 6,
+    "private_sample": {
+      "sessions": 1,
+      "messages": 2,
+      "fragments": 4,
+      "web_source_entries": 10,
+      "generated_file_hashes_checked": 22,
+      "integrity_passed": true,
+      "native_clickable_links": 10,
+      "native_footnotes": 2,
+      "native_role_styles_passed": true,
+      "visual_review": "passed"
+    },
+    "scope": "One authorized German railway conversation; synthetic tests also cover multiple replies, historical branches, link formats and tampering. No current full-private-vault rerun.",
+    "citation_mapping": "Export lacks inline citation-number mapping; list search/open results and answer links per message without inventing per-sentence references."
+  }
 }

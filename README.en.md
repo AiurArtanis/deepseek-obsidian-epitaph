@@ -2,7 +2,7 @@
 
 ![A blue DeepSeek whale hugging a purple Obsidian crystal on a hard drive, with archived chats growing into linked notes](assets/pics/deepseek-obsidian-hug.png)
 
-# DeepSeek Obsidian Epitaph
+# DeepSeek Obsidian Epitaph ✝️
 
 **A home for old conversations. A head start for your future knowledge base.**
 
@@ -33,21 +33,65 @@ The author supplied this screenshot, with reasoning and search records expanded 
 
 The result was captured directly from Obsidian's native Electron rendering. These two real screenshots are included at the author's request. All runnable fixtures and the bundled demo vault remain synthetic.
 
-**What works now?** Real DeepSeek v3 exports, from representative samples to the complete archive. You review a demo vault first; the rest moves in after approval. Other AI exports follow the same process after their fields have been studied and adapted, with their own `chat-ai-xx` styling and icon. No suitable icon? Sparkles are happy to cover the shift.
+From the arrival of V3 and R1, which seemed to come out of nowhere, to a V4 that now feels to me as though it is falling behind, DeepSeek hasn't given me that early-2025 feeling in a while: that the world had suddenly taken a step forward. But I still want to keep those conversations. The surprise of watching it unpack a problem. The stubborn late-night follow-ups. The few times I thought I had finally understood something. New models will overtake old ones; that doesn't erase what those moments meant. **I want a lasting home for them, and a record of the curious person I was when I asked.**
 
-**One job: convert chats into notes.** No NAS deployment, sync service, or surprise “knowledge extraction.” The name says epitaph; the job is keeping your conversations alive.
+So the conversations move out of an ever-changing sidebar and into folders you can keep. On your hard drive, or on your NAS. Open Obsidian and they are still questions and answers, with their dates, branches, attachments, and web sources intact. The title says epitaph. The ideas inside still have some growing to do.
 
 ## 🌱 An archive with a second career
 
 An archive answers “what did we actually discuss?” It preserves messages, timestamps, historical branches, statuses, and the attachments that exist in the export.
 
-A knowledge base answers “what can I do with this later?” Add tags, link useful passages to topic notes, verify conclusions, and turn them into your own methods, project records, or study notes. The resulting Markdown is also available to tools you choose to use later.
+A knowledge base asks “what can I do with this later?” Stable files, dates, sources, and links give other tools something useful to work with. An AI agent can help organize topics. Linked notes can grow into a wiki. A timeline can trace an idea back to its beginnings. Retrieval can help answer “why did I make that choice?”
 
-```text
-AI export → Demo vault → Your approval → Complete archive → Your review and connections → Knowledge base
+This skill takes the process through a complete archive. The second half of the diagram shows directions you can explore with additional tools, configuration, and human review.
+
+```mermaid
+flowchart TB
+    subgraph archive[Keep the memories intact]
+        A[AI chat exports] --> B[Study fields and attachments<br/>Adapt the source and style]
+        B --> C[Create a sample vault]
+        C --> D{You review it}
+        D -->|Adjust| C
+        D -->|Approve| E[Convert everything<br/>Verify integrity]
+        E --> F[Obsidian conversation archive<br/>On a hard drive or NAS]
+    end
+
+    F --> G[Choose content and access<br/>Keep dates, branches, and sources]
+
+    subgraph wiki[Knowledge wiki]
+        W1[AI agent<br/>Group topics and find overlap]
+        W2[Human review<br/>Topic notes and backlinks]
+        W3[Obsidian / wiki tools<br/>Methods, glossaries, handbooks]
+        W1 --> W2 --> W3
+    end
+    subgraph timeline[Timeline and connection network]
+        T1[Event extraction tools<br/>Dates, people, projects, decisions]
+        T2[Canvas / graph tools<br/>Connect time, topics, and branches]
+        T3[Trace changing ideas<br/>Research history and retrospectives]
+        T1 --> T2 --> T3
+    end
+    subgraph avatar[Personal digital counterpart]
+        Q1[Search index / RAG<br/>Retrieve by topic and time]
+        Q2[AI agent + language model<br/>Preferences and historical context]
+        Q3[Personal Q and A assistant<br/>Cite sources and mark unknowns]
+        Q1 --> Q2 --> Q3
+    end
+
+    G --> W1
+    G --> T1
+    G --> Q1
+    W3 -.->|Topic connections| Q1
+    T3 -.->|Time context| Q1
+    W3 --> H[You revise, add, and ask again]
+    T3 --> H
+    Q3 --> H
+    H --> I[New notes and conversations]
+    I -.->|Keep archiving| F
 ```
 
-The project stocks the shelves. You decide what becomes knowledge. **Your drive can remember it for you. Learning it is still your department.**
+A wiki can answer “what have I learned?” A timeline and connection network can answer “how did I reach that conclusion?” A personal digital counterpart can retrieve past preferences, reasons, and phrasing from material you authorize, with sources you can inspect. The same archive can give a study assistant material for revision questions, a writing assistant context for a draft, or a project agent the reasoning behind an old decision.
+
+**Your drive can remember. Tools can help you rediscover. You still decide what to trust and what to keep.**
 
 ## 📦 What gets a room in the archive?
 
@@ -55,6 +99,7 @@ The project stocks the shelves. You decide what becomes knowledge. **Your drive 
 |---|---|
 | Questions and answers | Role-based bubbles, read as a conversation |
 | Reasoning and historical searches | Folded until you need them |
+| Referenced and searched web pages | A clickable list below each answer, deduplicated in order |
 | Retries, old branches, timeouts | Original statuses preserved; even failed attempts get a seat |
 | Tables, formulas, images | Converted for Obsidian reading |
 | Long code and HTML | Collapsible source plus separate files; never auto-executed |
@@ -125,10 +170,14 @@ Optional Obsidian integration checks and environment limits are documented in [v
 
 </details>
 
-## A few honest footnotes
+## A note to the part of me that is still curious
 
-NAS deployment, incremental sync, automatic summaries, and knowledge extraction are outside the scope. Unsupported AI exports require schema research and an adapter first. Archiving preserves historical answers; it does not fact-check them.
+I don't know where AI will take us. A beautiful piece of reasoning still excites me; a confidently wrong answer still makes me pause. I want to get closer to it without handing over my judgment. That curiosity comes with hope and a little awe: at abilities I don't yet understand, at the lives they might change, and at consequences we may not yet know how to carry.
 
-Please report bugs with synthetic minimal reproductions, not private chats or attachments. The open-source license is still undecided; see [LICENSE](LICENSE). The repository remains private while it is being refined; open-source release comes later.
+I keep these conversations to remember how I asked, what persuaded me, and when I changed my mind. Years from now, I may laugh at how naive I was. I may also find that an idea which later mattered was already hiding in an offhand follow-up question.
 
-**The GPUs can catch up later. Save the memories now.**
+If this little archive has a wish, it is that we occasionally look back while chasing the next astonishing thing. **Keep exploring. Keep questioning. May we never lose the nerve to ask.**
+
+---
+
+The project remains in private development; an open-source license has not yet been selected. See [LICENSE](LICENSE). Please report issues with synthetic minimal reproductions to protect private chats and attachments.

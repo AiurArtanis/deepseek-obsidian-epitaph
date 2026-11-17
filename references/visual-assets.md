@@ -17,13 +17,13 @@
 |---|---|
 | `assets/pics/deepseek-obsidian-hug.png` | 内置 imagegen 生成的封面；2026-11-17 按用户标注修补紫色玩偶脸颊污点，保留原来的拥抱动作、腮红和构图。 |
 | `assets/pics/screenshot.png` | 用户主动添加并明确要求用于 README 的 DeepSeek 原始界面截图，保留原字节。 |
-| `assets/pics/obsidian-german-rail.png` | 用户指定的「【144032】 德国最快高铁线路及速度信息」笔记，在正式库中完成后的 Obsidian 原生渲染截图。 |
+| `assets/pics/obsidian-german-rail.png` | 用户指定的德国高铁对话，使用当前模板生成单会话样板后的 Obsidian 原生截图，包含回答末尾的 10 个网页来源与消息脚注。 |
 
 真实截图的使用范围仅为上述两张展示图；测试 fixtures、演示笔记库和可恢复的原始 JSON 仍全部为合成数据。README 不包含该真实对话的 Markdown、JSON 或附件副本。
 
 ## Obsidian 截图方式
 
-先确认正式库和目标笔记。官方 CLI 的 `dev:screenshot` 返回异常退出后，通过 Obsidian CLI 的 `eval` 调用 Electron `webContents.capturePage()`，直接保存 PNG；不使用桌面自动化，也不重新排版成模拟聊天截图。
+先确认目标样板库和笔记。通过 Obsidian CLI 的 `eval` 调用 Electron `webContents.capturePage()`，直接保存 PNG；不使用桌面自动化，也不重新排版成模拟聊天截图。初次制作时 `dev:screenshot` 返回异常，因此沿用已验证的原生截图方式。
 
 截图时临时收起两侧栏、隐藏无关操作区域，并调整窗口尺寸和阅读留白；原笔记文本、属性、代码和样式文件不改写。结束后恢复原视图、窗口、缩放和后台节流。最终图片只呈现指定笔记的内容，包含表格和原生脚注。
 
@@ -37,4 +37,4 @@
 
 ## README 渲染检查
 
-中文与英文均通过 GitHub Markdown API 生成真实 GFM HTML，再在 Ego Lite 中用本地 GitHub 风格 CSS 检查 980/360 像素宽度及浅/深色。三张图片均正常加载且带替代文本，页面无横向溢出，原图折叠区可展开。截图已人工查看；这项检查不等同于逐屏审核 GitHub 网站本身的主题 CSS。
+中文与英文均通过 GitHub Markdown API 生成真实 GFM HTML，再在 Ego Lite 中用本地 GitHub 风格 CSS 检查 980/360 像素宽度及浅/深色。流程图先由 Obsidian 原生 Markdown 渲染器解析，导出的 SVG 用于本地预览；GitHub 上的 Mermaid 展示另行核对。三张图片均正常加载且带替代文本，页面无横向溢出，原图折叠区可展开。截图已人工查看；本地检查不等同于逐屏审核 GitHub 网站本身的主题 CSS。

@@ -14,12 +14,12 @@
     {
       "path": "assets/pics/obsidian-german-rail.png",
       "origin": "native-obsidian-electron-capture",
-      "bytes": 322797,
+      "bytes": 458024,
       "dimensions": [
-        1600,
-        1702
+        2000,
+        2252
       ],
-      "sha256": "fb1205a6fa5d941100f017b2f642c34ef09614c3b80bd70211c5471e2ec8ec58"
+      "sha256": "3de5fb61e1b421d0489cef9dcb91d240a03411d6c737922e29d48cc10fb8ed17"
     },
     {
       "path": "assets/pics/deepseek-obsidian-hug.png",
@@ -39,7 +39,8 @@
     "provided_image_original_bytes_preserved": true,
     "view_and_sidebar_settings_restored": true,
     "no_private_conversation_source_files_copied": true,
-    "visual_inspection": "passed: complete dialogue, table and native message footnotes"
+    "visual_inspection": "passed: complete dialogue, table, 10 clickable web sources and native message footnotes",
+    "scope": "Current one-conversation demo generated from the authorized German railway export."
   },
   "cover": {
     "tool": "built-in image_gen",
@@ -50,7 +51,7 @@
   },
   "readme_preview": {
     "status": "passed",
-    "renderer": "GitHub Markdown API GFM HTML; local GitHub-like CSS; Ego Lite Chromium",
+    "renderer": "GitHub Markdown API HTML and Obsidian-rendered Mermaid SVG; local CSS in Ego Lite",
     "widths": [
       980,
       360
@@ -66,6 +67,11 @@
     "languages": [
       "zh-CN",
       "en"
-    ]
+    ],
+    "mermaid_languages_rendered": [
+      "zh-CN",
+      "en"
+    ],
+    "cases": 8
   }
 }

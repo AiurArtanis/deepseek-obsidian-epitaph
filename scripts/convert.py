@@ -14,7 +14,7 @@ import zipfile
 from archive_engine import ArchiveBuilder
 import build_demo as base
 
-VERSION = '1.0.0'
+VERSION = '1.1.0'
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_PROFILE = {'name':'DeepSeek','slug':'deepseek','accent':'#3964fe','emoji':'🐋'}
 FRAGMENTS = {'REQUEST','RESPONSE','TEMPLATE_RESPONSE','THINK','FILE','TOOL_SEARCH','TOOL_OPEN','TOOL_FIND','CONTENT_RISK','TIP'}
@@ -142,7 +142,7 @@ def select_samples(sessions,count=6,explicit=None):
 
 
 def engine_hash():
-    names=['scripts/convert.py','scripts/archive_engine.py','scripts/build_demo.py','scripts/verify_vault.py','assets/snippets/deepseek-chat.css','references/vault-format.md']
+    names=['scripts/convert.py','scripts/archive_engine.py','scripts/build_demo.py','scripts/web_sources.py','scripts/verify_vault.py','assets/snippets/deepseek-chat.css','references/vault-format.md']
     return base.sha(base.jdump({n:base.sha((ROOT/n).read_bytes()) for n in names}).encode())
 
 

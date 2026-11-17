@@ -27,6 +27,7 @@ import re
 import sys
 
 from urllib.parse import quote
+from web_sources import render_sources
 
 VERSION = "0.3.0-demo"
 
@@ -228,6 +229,8 @@ class Builder:
         if thinks: extra.append(callout("chat-think", f"思考过程 · {len(thinks)} 个片段", "\n\n---\n\n".join(thinks), True))
         if searches: extra.append(callout("chat-search", f"当时的检索记录 · {len(searches)} 个片段", self.search(searches), True))
         if notices: body.append(callout("info", "原平台提示", "\n\n".join(notices), True))
+        sources = render_sources(m)
+        if sources: body.append(sources)
         title = f"{'我' if user else self.provider_name} · {local(m['inserted_at']):%Y-%m-%d %H:%M:%S} · m{mid}"
         if historical: title += " · " + m['status']
         title += f"[^msg-{mid}]"
