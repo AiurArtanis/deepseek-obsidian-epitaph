@@ -20,6 +20,36 @@ def files(root):
             if p.is_file() and not any(part in {"__pycache__", ".git"} for part in p.relative_to(root).parts)}
 
 
+def compare_generated(expected, actual):
+    """Compare archive payloads; validate each build's byte hashes independently.
+
+    zlib versions may encode the same input differently. Only gzip containers
+    permit that difference; every other payload still requires identical bytes.
+    """
+    if set(expected) != set(actual):
+        raise ValueError("Generated file coverage differs")
+    manifest_path = "_维护/生成清单.json"
+    manifests = []
+    for collection in (expected, actual):
+        manifest = json.loads(collection[manifest_path])
+        for path, digest in manifest["files"].items():
+            if path not in collection or hashlib.sha256(collection[path]).hexdigest() != digest:
+                raise ValueError("Generated manifest hash mismatch: " + path)
+        manifests.append(manifest)
+    if set(manifests[0]["files"]) != set(manifests[1]["files"]):
+        raise ValueError("Generated manifest coverage differs")
+    if {k:v for k,v in manifests[0].items() if k != "files"} != {k:v for k,v in manifests[1].items() if k != "files"}:
+        raise ValueError("Generated manifest metadata differs")
+    for path in expected:
+        if path == manifest_path:
+            continue
+        left, right = expected[path], actual[path]
+        if path.endswith(".gz"):
+            left, right = gzip.decompress(left), gzip.decompress(right)
+        if left != right:
+            raise ValueError("Generated payload differs: " + path)
+
+
 def check():
     with tempfile.TemporaryDirectory() as temp:
         temp = Path(temp)
@@ -27,8 +57,7 @@ def check():
         if files(FIXTURE) != files(temp / "source"):
             raise ValueError("Committed fixtures differ from independently generated synthetic data")
         build(temp / "source", temp / "vault")
-        if files(ROOT / "examples/demo-vault") != files(temp / "vault"):
-            raise ValueError("Committed example vault differs from synthetic regeneration")
+        compare_generated(files(ROOT / "examples/demo-vault"), files(temp / "vault"))
     allowed_ids = {sid for sid, _ in SAMPLES} | {f"1000000{i}-0000-4000-8000-000000000000" for i in (1, 2)} | {"20000001-0000-4000-8000-000000000000"}
     count = 0
     for path in ROOT.rglob("*"):

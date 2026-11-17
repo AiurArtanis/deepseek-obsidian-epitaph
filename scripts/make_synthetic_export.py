@@ -31,7 +31,8 @@ def png(rgb):
         return struct.pack(">I", len(payload)) + kind + payload + struct.pack(">I", zlib.crc32(kind + payload))
     rows = b"".join(b"\0" + bytes(rgb if (y // 8) % 2 else (240, 245, 255)) * 96 for y in range(64))
     return (b"\x89PNG\r\n\x1a\n" + chunk(b"IHDR", struct.pack(">IIBBBBB", 96, 64, 8, 2, 0, 0, 0))
-            + chunk(b"IDAT", zlib.compress(rows)) + chunk(b"IEND", b""))
+            # Level zero uses stored blocks: stable pixels and bytes across zlib builds.
+            + chunk(b"IDAT", zlib.compress(rows, level=0)) + chunk(b"IEND", b""))
 
 
 def make_export(destination: Path):

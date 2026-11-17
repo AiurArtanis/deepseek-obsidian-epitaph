@@ -9,6 +9,7 @@
 - 明确 Skill 只负责转换，不包含 NAS 部署、同步或知识提炼；旧固定六组合成入口保留用于试用和回归。
 - 完善中英文 README 与真实前后对照，修补封面 Obsidian 玩偶脸颊的小污点；补齐原生 Obsidian 与 GitHub Markdown 渲染检查。
 - 仓库保持私人，开源协议待定；最新实测范围见 references/verification-results.json。
+- 修复 Python 3.13/3.14 压缩器差异导致的合成重建误报：稳定生成 PNG；gzip 同时核对各自产物哈希与解压后的源字节，仍拒绝内容或清单损坏。
 
 ## README 展示补充 — 2026-11-16
 

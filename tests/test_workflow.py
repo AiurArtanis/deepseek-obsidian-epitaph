@@ -1,6 +1,7 @@
 """End-to-end checks for arbitrary exports, review binding and provider adaptation."""
 import copy
 import gzip
+import hashlib
 import json
 from pathlib import Path
 import shutil
@@ -13,6 +14,7 @@ sys.path.insert(0,str(ROOT/'scripts'))
 from convert import convert,inspect,load_profile,style
 from make_synthetic_export import FIXTURE,SAMPLES
 from verify_vault import verify
+from check_public_content import compare_generated
 
 
 class WorkflowTests(unittest.TestCase):
@@ -139,6 +141,25 @@ class WorkflowTests(unittest.TestCase):
         asset=next(a for r in mapping for a in r['attachments'] if a['state']=='copied')
         (demo/asset['path']).write_bytes(b'corrupted')
         self.assertFalse(verify(self.source,demo)['passed'])
+
+
+class CrossRuntimeArchiveTests(unittest.TestCase):
+    def archive(self, payload, level):
+        packed=gzip.compress(payload,compresslevel=level,mtime=0)
+        return {'source.json.gz':packed,'_维护/生成清单.json':json.dumps({'version':'test','files':{'source.json.gz':hashlib.sha256(packed).hexdigest()}}).encode()}
+
+    def test_equivalent_gzip_encodings_verify_their_own_hashes(self):
+        compare_generated(self.archive(b'synthetic payload '*100,1),self.archive(b'synthetic payload '*100,9))
+
+    def test_changed_gzip_payload_is_rejected_even_with_valid_hash(self):
+        with self.assertRaisesRegex(ValueError,'payload differs'):
+            compare_generated(self.archive(b'original',1),self.archive(b'modified',9))
+
+    def test_incorrect_gzip_manifest_hash_is_rejected(self):
+        original=self.archive(b'original',1);modified=dict(original)
+        modified['source.json.gz']=gzip.compress(b'changed',mtime=0)
+        with self.assertRaisesRegex(ValueError,'hash mismatch'):
+            compare_generated(original,modified)
 
 
 if __name__=='__main__':unittest.main()
