@@ -7,11 +7,9 @@
 <style>
 * { box-sizing: border-box }
 body { margin: 0; color: #252739; font-family: "Segoe UI","Microsoft YaHei UI",sans-serif }
-main { max-width: 1080px; padding: 36px 42px 40px; margin: auto; background: radial-gradient(ellipse at 96% 0%,#ede9fc 0,transparent 48%),#faf8f3 }
-h1,h2,p { margin: 0 }
-h1 { font: 650 38px/1.28 Georgia,"SimSun",serif; letter-spacing: -.035em }
+main { max-width: 1080px; padding: 18px; margin: auto; background: radial-gradient(ellipse at 96% 0%,#ede9fc 0,transparent 48%),#faf8f3 }
+h2,p { margin: 0 }
 .steps,.uses { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 22px }
-.steps { margin-top: 25px }
 .step { position: relative; display: flex; gap: 13px; align-items: center; min-height: 84px; padding: 14px 17px; background: #fffefa; border: 1px solid #ccc9d0; border-radius: 10px }
 .step:not(:last-child)::after { content: "→"; position: absolute; right: -22px; width: 22px; text-align: center; font: 20px/1 Georgia; color: #635d77 }
 .step:last-child { background: #484067; border-color: #484067; color: white }
@@ -31,21 +29,20 @@ h2 { font-size: 20px; line-height: 1.25; font-weight: 650 }
 .voice { --paper:#f4eff9;--ink:#62478d;--line:#dccfea;--spot:#d2bdec }
 .use svg { width:65px;height:49px;display:block;margin-bottom:12px }
 .use h2 { font-size:24px;letter-spacing:-.03em }
-.use p { margin-top:9px; color:#3e4050; font-size:17px; line-height:1.55; text-wrap:pretty }
+.use p { margin-top:9px; color:#3e4050; font-size:17px; line-height:26px; text-wrap:pretty }
 svg { fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round }
 .spot { fill:var(--spot) }
 .defs { display:none }
 @media(max-width:620px){
- main { padding:22px 19px 24px }
- h1 { font-size:27px }
+ main { padding:12px }
  .steps,.uses { grid-template-columns:1fr; gap:0 }
- .steps { margin-top:18px;gap:13px }
+ .steps { gap:13px }
  .step { min-height:54px; padding:9px 14px }
- .step h2 { font-size:17px }.step p{font-size:13px;margin-top:2px}
+ .step h2 { font-size:17px; line-height:21px }.step p{font-size:13px;margin-top:2px}
  .step:not(:last-child)::after { content:"↓";font-size:14px;right:auto;left:19px;bottom:-15px }
  .junction {height:18px;background:none;margin:0 0 0 30px;border-left:1px solid #aaa2b7}.junction i{display:none}
  .uses {gap:8px}.use {display:grid;grid-template-columns:51px 1fr;column-gap:13px;align-items:center;padding:14px}
- .use svg {grid-row:span 2;width:51px;height:44px;margin:0}.use h2{font-size:20px}.use p {margin-top:4px;font-size:14px;line-height:1.45}
+ .use svg {grid-row:span 2;width:51px;height:44px;margin:0}.use h2{font-size:20px}.use p {margin-top:4px;font-size:14px;line-height:20px}
 }
 </style>
 </head>
@@ -59,7 +56,6 @@ svg { fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; st
 <symbol id="voice" viewBox="0 0 64 48"><path class="spot" d="M24 19h31q4 0 4 4v14h-6l-1 6-10-6H24z"/><path d="M5 7q0-3 4-3h31q4 0 4 4v17q0 4-4 4H23L12 36v-7H9q-4 0-4-4z" fill="#fffdf7"/><path d="M13 14h23m-23 7h14"/></symbol>
 </defs></svg>
 <main>
-<h1 data-en="From chat to archive">从聊天记录到对话档案</h1>
 <section class="steps">
 <div class="step"><svg><use href="#export"/></svg><div><h2 data-en="Export chats">导出对话</h2><p data-en="DeepSeek history &amp; attachments">DeepSeek 记录与附件</p></div></div>
 <div class="step"><svg><use href="#review"/></svg><div><h2 data-en="Review a sample">审核样板</h2><p data-en="Check formulas, files and branches">检查公式、附件与分支</p></div></div>
