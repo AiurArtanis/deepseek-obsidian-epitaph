@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-17",
+  "date": "2026-11-19",
   "images": [
     {
       "path": "assets/pics/screenshot.png",
@@ -30,6 +30,46 @@
         809
       ],
       "sha256": "f2558817e141a7d446e6a328969f1c4e6c40b6ff414234f5d14444fb601b6dff"
+    },
+    {
+      "path": "assets/pics/deepseek-memory-integral.png",
+      "origin": "user-provided-authorized",
+      "bytes": 325506,
+      "dimensions": [
+        1035,
+        2312
+      ],
+      "sha256": "8a75d488051cc5b68dc08b7f9c1f2776297e2456d2d4ba26193d5322b7b32440"
+    },
+    {
+      "path": "assets/pics/obsidian-memory-integral.png",
+      "origin": "native-obsidian-electron-capture",
+      "bytes": 198382,
+      "dimensions": [
+        1164,
+        2179
+      ],
+      "sha256": "c415276fcb61827eb08462ed1d48ea2df8f77e8e218cc37e8fee6f943789e5b3"
+    },
+    {
+      "path": "assets/pics/deepseek-o3.png",
+      "origin": "user-provided-authorized",
+      "bytes": 377889,
+      "dimensions": [
+        1004,
+        854
+      ],
+      "sha256": "da32a06cbaf247929fa3785e08b44d3484f5da24768782293c25562fc2198a55"
+    },
+    {
+      "path": "assets/pics/obsidian-o3.png",
+      "origin": "native-obsidian-electron-capture",
+      "bytes": 158919,
+      "dimensions": [
+        1164,
+        990
+      ],
+      "sha256": "24076b6feed285eed58a468673b698ee02a8477880d5b6499ef4372b7fa8380b"
     }
   ],
   "capture": {
@@ -72,6 +112,7 @@
       "zh-CN",
       "en"
     ],
-    "cases": 8
+    "cases": 8,
+    "date": "2026-11-17"
   }
 }

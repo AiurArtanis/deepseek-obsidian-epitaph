@@ -11,15 +11,17 @@
 
 本轮查阅了 [oil-oil/beautify-github-readme 的技能](https://github.com/oil-oil/beautify-github-readme/blob/cee51546f17542d547973e5292ae2e70855424d9/skills/beautify-github-readme/SKILL.md)，使用其中的“用途 → 证据 → 机制 → 首次使用”顺序、项目自身视觉语言和 GitHub 宽窄屏检查方法。也考察了 [beautify-github-profile](https://github.com/rzashakeri/beautify-github-profile)；其定位偏个人主页素材索引，本轮选择前者作为 README 工作流。仅查阅和使用方法，未安装新的全局 Skill 或复制第三方素材。
 
-## 三张展示图片
+## 展示图片
 
 | 文件 | 来源与用途 |
 |---|---|
 | `assets/pics/deepseek-obsidian-hug.png` | 内置 imagegen 生成的封面；2026-11-17 按用户标注修补紫色玩偶脸颊污点，保留原来的拥抱动作、腮红和构图。 |
 | `assets/pics/screenshot.png` | 用户主动添加并明确要求用于 README 的 DeepSeek 原始界面截图，保留原字节。 |
 | `assets/pics/obsidian-german-rail.png` | 用户指定的德国高铁对话，使用当前模板生成单会话样板后的 Obsidian 原生截图，包含回答末尾的 10 个网页来源与消息脚注。 |
+| `deepseek-memory-integral.png` / `obsidian-memory-integral.png` | 用户提供的网页原图与 Obsidian 阅读视图，均截至示例表 45 岁、0.980。 |
+| `deepseek-o3.png` / `obsidian-o3.png` | 用户提供的网页原图与 Obsidian 阅读视图，均展开 17 秒思考过程，显示完整回答。 |
 
-真实截图的使用范围仅为上述两张展示图；测试 fixtures、演示笔记库和可恢复的原始 JSON 仍全部为合成数据。README 不包含该真实对话的 Markdown、JSON 或附件副本。
+真实截图的使用范围仅为上述三组对照图；测试 fixtures、演示笔记库和可恢复的原始 JSON 仍全部为合成数据。README 不包含这些对话的 Markdown、JSON 或附件副本。
 
 ## Obsidian 截图方式
 
@@ -37,4 +39,4 @@
 
 ## README 渲染检查
 
-中文与英文均通过 GitHub Markdown API 生成真实 GFM HTML，再在 Ego Lite 中用本地 GitHub 风格 CSS 检查 980/360 像素宽度及浅/深色。流程图先由 Obsidian 原生 Markdown 渲染器解析，导出的 SVG 用于本地预览；GitHub 上的 Mermaid 展示另行核对。三张图片均正常加载且带替代文本，页面无横向溢出，原图折叠区可展开。截图已人工查看；本地检查不等同于逐屏审核 GitHub 网站本身的主题 CSS。
+2026-11-17 的三图版本中，中文与英文均通过 GitHub Markdown API 生成真实 GFM HTML，再在 Ego Lite 中用本地 GitHub 风格 CSS 检查 980/360 像素宽度及浅/深色。流程图先由 Obsidian 原生 Markdown 渲染器解析，导出的 SVG 用于本地预览；GitHub 上的 Mermaid 展示另行核对。三张图片均正常加载且带替代文本，页面无横向溢出，原图折叠区可展开。截图已人工查看；本地检查不等同于逐屏审核 GitHub 网站本身的主题 CSS。
