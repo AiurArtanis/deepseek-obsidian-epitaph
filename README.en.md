@@ -67,19 +67,12 @@ So the conversations move out of an ever-changing sidebar and into folders you c
 
 An archive answers “what did we actually discuss?” It preserves messages, timestamps, historical branches, statuses, and the attachments that exist in the export.
 
-A knowledge base asks “what can I do with this later?” Stable files, dates, sources, and links give other tools something useful to work with. An AI agent can help organize topics. Linked notes can grow into a wiki. A timeline can trace an idea back to its beginnings. Retrieval can help answer “why did I make that choice?”
+Once you approve a sample, the skill converts the full export and checks messages, branches, and attachments. From there, you can build a wiki with backlinks, map past decisions in Canvas, or let an AI agent find the conversation that explains an old choice.
 
-This skill takes the process through a complete archive. The second half of the diagram shows directions you can explore with additional tools, configuration, and human review.
-
-```mermaid
-flowchart TD
-    A["DeepSeek export"] --> B["Review a sample"] --> C["Obsidian vault"]
-    C --> W["Knowledge wiki"]
-    C --> T["Timeline"]
-    C --> Q["Personal Q&A"]
-```
-
-A wiki can answer “what have I learned?” A timeline and connection network can answer “how did I reach that conclusion?” A personal digital counterpart can retrieve past preferences, reasons, and phrasing from material you authorize, with sources you can inspect. The same archive can give a study assistant material for revision questions, a writing assistant context for a draft, or a project agent the reasoning behind an old decision.
+<picture>
+  <source media="(max-width: 620px)" srcset="assets/pics/chat-archive-en-mobile.png">
+  <img src="assets/pics/chat-archive-en.png" alt="Export from DeepSeek, review a sample, then build and verify an Obsidian vault. Use the archive for a knowledge wiki, a decision timeline, or personal Q&amp;A with links to original chats.">
+</picture>
 
 **Your drive can remember. Tools can help you rediscover. You still decide what to trust and what to keep.**
 

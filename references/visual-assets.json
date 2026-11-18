@@ -70,6 +70,46 @@
         990
       ],
       "sha256": "24076b6feed285eed58a468673b698ee02a8477880d5b6499ef4372b7fa8380b"
+    },
+    {
+      "path": "assets/pics/chat-archive-en-mobile.png",
+      "origin": "assets/diagrams/chat-archive.html",
+      "bytes": 201137,
+      "dimensions": [
+        720,
+        1398
+      ],
+      "sha256": "a7e1ad93d8128c210c036d4d7f8d07213ad78fe0ebd74de07f26388672e460b4"
+    },
+    {
+      "path": "assets/pics/chat-archive-en.png",
+      "origin": "assets/diagrams/chat-archive.html",
+      "bytes": 378415,
+      "dimensions": [
+        1920,
+        1098
+      ],
+      "sha256": "addd0b1b981bfe0e4e9d357f2fed79b64563166d06b5eddc7dd5ca09a4457796"
+    },
+    {
+      "path": "assets/pics/chat-archive-zh-mobile.png",
+      "origin": "assets/diagrams/chat-archive.html",
+      "bytes": 209501,
+      "dimensions": [
+        720,
+        1276
+      ],
+      "sha256": "371fb97cf5fe5f700622196cf3812a55f40b6e8fa3b42b2e57c111d3cad75879"
+    },
+    {
+      "path": "assets/pics/chat-archive-zh.png",
+      "origin": "assets/diagrams/chat-archive.html",
+      "bytes": 387247,
+      "dimensions": [
+        1920,
+        1016
+      ],
+      "sha256": "d7e14d0962a4d28e8ed6e2f614e7e0a766bd9ba5e0815c1ea0c9d6306eb356eb"
     }
   ],
   "capture": {

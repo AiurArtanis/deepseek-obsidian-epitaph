@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>从对话到档案 · From chat to archive</title>
+<style>
+* { box-sizing: border-box }
+body { margin: 0; color: #252739; font-family: "Segoe UI","Microsoft YaHei UI",sans-serif }
+main { max-width: 1080px; padding: 36px 42px 40px; margin: auto; background: radial-gradient(ellipse at 96% 0%,#ede9fc 0,transparent 48%),#faf8f3 }
+h1,h2,p { margin: 0 }
+h1 { font: 650 38px/1.28 Georgia,"SimSun",serif; letter-spacing: -.035em }
+.steps,.uses { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 22px }
+.steps { margin-top: 25px }
+.step { position: relative; display: flex; gap: 13px; align-items: center; min-height: 84px; padding: 14px 17px; background: #fffefa; border: 1px solid #ccc9d0; border-radius: 10px }
+.step:not(:last-child)::after { content: "→"; position: absolute; right: -22px; width: 22px; text-align: center; font: 20px/1 Georgia; color: #635d77 }
+.step:last-child { background: #484067; border-color: #484067; color: white }
+.step svg { flex: none; width: 34px; height: 34px; color: #4267bf }
+.step:nth-child(2) svg { color: #5d6359 }
+.step:last-child svg { color: #ddd0ff }
+h2 { font-size: 20px; line-height: 1.25; font-weight: 650 }
+.step p { font-size: 15px; margin-top: 4px; color: #565866 }
+.step:last-child p { color: #e4deef }
+.junction { height: 53px; position: relative; margin: 0 calc((100% - 44px)/6); background: linear-gradient(#9b94a7,#9b94a7) right top/1px 26px no-repeat,linear-gradient(#9b94a7,#9b94a7) left 25px/100% 1px no-repeat }
+.junction i { position:absolute; bottom:0; height:28px; width:1px; background:#9b94a7 }
+.junction i::after { content:""; position:absolute; width:6px; height:6px; border-radius:50%; background:#766e8c; bottom:-3px; left:-2.5px; z-index:1 }
+.junction i:nth-child(2) { left:50% }.junction i:last-child {right:0}
+.use { padding: 19px 19px 21px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); color: var(--ink) }
+.book { --paper:#eef3fa;--ink:#244c7b;--line:#cbd9e9;--spot:#b1d1f2 }
+.time { --paper:#f0f4ec;--ink:#385e48;--line:#cfdcc8;--spot:#b5d6bc }
+.voice { --paper:#f4eff9;--ink:#62478d;--line:#dccfea;--spot:#d2bdec }
+.use svg { width:65px;height:49px;display:block;margin-bottom:12px }
+.use h2 { font-size:24px;letter-spacing:-.03em }
+.use p { margin-top:9px; color:#3e4050; font-size:17px; line-height:1.55; text-wrap:pretty }
+svg { fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round }
+.spot { fill:var(--spot) }
+.defs { display:none }
+@media(max-width:620px){
+ main { padding:22px 19px 24px }
+ h1 { font-size:27px }
+ .steps,.uses { grid-template-columns:1fr; gap:0 }
+ .steps { margin-top:18px;gap:13px }
+ .step { min-height:54px; padding:9px 14px }
+ .step h2 { font-size:17px }.step p{font-size:13px;margin-top:2px}
+ .step:not(:last-child)::after { content:"↓";font-size:14px;right:auto;left:19px;bottom:-15px }
+ .junction {height:18px;background:none;margin:0 0 0 30px;border-left:1px solid #aaa2b7}.junction i{display:none}
+ .uses {gap:8px}.use {display:grid;grid-template-columns:51px 1fr;column-gap:13px;align-items:center;padding:14px}
+ .use svg {grid-row:span 2;width:51px;height:44px;margin:0}.use h2{font-size:20px}.use p {margin-top:4px;font-size:14px;line-height:1.45}
+}
+</style>
+</head>
+<body>
+<svg class="defs" aria-hidden="true"><defs>
+<symbol id="export" viewBox="0 0 32 32"><path d="M4 5h23v15H13l-6 5v-5H4z" fill="#e4edff"/><path d="M9 10h12m-12 5h8"/></symbol>
+<symbol id="review" viewBox="0 0 32 32"><path d="M6 3h14l5 6v20H6z" fill="#f3f4ea"/><path d="M19 3v7h6M10 18l4 4 8-9"/></symbol>
+<symbol id="vault" viewBox="0 0 32 32"><path d="M3 10V7h10l3 3h13v16H3z" fill="#70648c"/><path d="M4 13h24M13 18h6"/></symbol>
+<symbol id="book" viewBox="0 0 64 48"><path class="spot" d="m5 18 23 3 24-7 6 23-25 7-25-5z"/><path d="M7 10q12-3 22 5 12-11 25-10l2 25q-13 0-24 10-11-8-23-7z" fill="#fffdf7"/><path d="m29 15 3 25m-18-24 9 3m-9 4 10 3m12-10 11-5m-10 12 11-5"/></symbol>
+<symbol id="time" viewBox="0 0 64 48"><path d="M5 40h52M9 35l13-14 13 6 17-19" stroke-width="2.5"/><g class="spot"><circle cx="9" cy="35" r="4"/><circle cx="22" cy="21" r="5"/><circle cx="35" cy="27" r="4"/><circle cx="52" cy="8" r="5"/></g><path d="M22 30v6m30-20v19" stroke-dasharray="2 4"/></symbol>
+<symbol id="voice" viewBox="0 0 64 48"><path class="spot" d="M24 19h31q4 0 4 4v14h-6l-1 6-10-6H24z"/><path d="M5 7q0-3 4-3h31q4 0 4 4v17q0 4-4 4H23L12 36v-7H9q-4 0-4-4z" fill="#fffdf7"/><path d="M13 14h23m-23 7h14"/></symbol>
+</defs></svg>
+<main>
+<h1 data-en="From chat to archive">从聊天记录到对话档案</h1>
+<section class="steps">
+<div class="step"><svg><use href="#export"/></svg><div><h2 data-en="Export chats">导出对话</h2><p data-en="DeepSeek history &amp; attachments">DeepSeek 记录与附件</p></div></div>
+<div class="step"><svg><use href="#review"/></svg><div><h2 data-en="Review a sample">审核样板</h2><p data-en="Check formulas, files and branches">检查公式、附件与分支</p></div></div>
+<div class="step"><svg><use href="#vault"/></svg><div><h2 data-en="Build the vault">生成 Obsidian 笔记库</h2><p data-en="Convert and verify the full archive">全量转换并核对完整性</p></div></div>
+</section>
+<div class="junction" aria-hidden="true"><i></i><i></i><i></i></div>
+<section class="uses">
+<article class="use book"><svg><use href="#book"/></svg><h2 data-en="Knowledge wiki">知识 Wiki</h2><p data-en="Group related answers by topic. Link them into a glossary or a project handbook.">将问答整理成主题笔记，再用双链编成术语表或项目手册。</p></article>
+<article class="use time"><svg><use href="#time"/></svg><h2 data-en="Decision timeline">决策时间线</h2><p data-en="Trace an idea from the first question to the decision. Revisit the evidence that changed your mind.">按日期串起提问与试验，回看当时凭什么作出决定。</p></article>
+<article class="use voice"><svg><use href="#voice"/></svg><h2 data-en="Personal Q&amp;A">数字分身问答</h2><p data-en="Ask an AI agent why you chose an option. Follow its citation back to your original exchange.">问 Agent「当时为什么这样选？」点击出处，读回原对话。</p></article>
+</section>
+</main>
+<script>
+if (new URLSearchParams(location.search).get("lang") === "en") {
+  document.documentElement.lang = "en";
+  for (const element of document.querySelectorAll("[data-en]")) element.textContent = element.dataset.en;
+}
+</script>
+</body>
+</html>

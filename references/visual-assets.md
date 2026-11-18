@@ -40,3 +40,7 @@
 ## README 渲染检查
 
 2026-11-17 的三图版本中，中文与英文均通过 GitHub Markdown API 生成真实 GFM HTML，再在 Ego Lite 中用本地 GitHub 风格 CSS 检查 980/360 像素宽度及浅/深色。流程图先由 Obsidian 原生 Markdown 渲染器解析，导出的 SVG 用于本地预览；GitHub 上的 Mermaid 展示另行核对。三张图片均正常加载且带替代文本，页面无横向溢出，原图折叠区可展开。截图已人工查看；本地检查不等同于逐屏审核 GitHub 网站本身的主题 CSS。
+
+## 归档流程图
+
+中英文 README 使用从 [同一份 HTML](../assets/diagrams/chat-archive.html) 导出的 PNG。直接打开源文件查看中文，地址后加 `?lang=en` 查看英文。按 960 或 360 CSS 像素宽度排版，截取 `main` 的完整高度，以两倍分辨率导出到 `assets/pics/chat-archive-{zh,en}[-mobile].png`。小屏版把用途改为纵向排列，书页、时间轴和气泡图标均绘制在 HTML 内。
