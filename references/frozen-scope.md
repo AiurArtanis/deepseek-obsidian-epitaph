@@ -1,6 +1,6 @@
 # 能力范围与版本证据
 
-当前版本：1.1.0 私人开发版。0.3.0-demo 是早期合成样板基线，1.0.0 完成真实转换入口，1.1.0 新增回答末尾的网页来源清单。
+Skill 首个公开发行版为 v1.0.0，内含 1.1.0 版转换格式。0.3.0-demo 是早期合成样板基线，1.0.0 完成真实转换入口，1.1.0 新增回答末尾的网页来源清单。
 
 ## 已实现
 
@@ -21,4 +21,4 @@ DeepSeek v3 有原生适配；其他来源需检查实际格式并开发适配�
 
 verification-results.json 记录实际测试和视觉检查。frozen-files.json 是当前版本校验清单，随有依据的版本变更更新，不代替行为测试，也不是永久禁止开发。
 
-所有 runnable fixtures、演示笔记及原始 JSON 均为合成数据。README 中的真实截图为用户授权的有限例外，见 visual-assets.md。仓库保持 private，许可证待选，不在本任务中公开开源。
+所有 runnable fixtures、演示笔记及原始 JSON 均为合成数据。README 中的真实截图为用户授权的有限例外，见 visual-assets.md。Skill 采用 [MIT License](../LICENSE)。

@@ -160,3 +160,7 @@ I don't know where AI will take us. A beautiful piece of reasoning still excites
 I keep these conversations to remember how I asked, what persuaded me, and when I changed my mind. Years from now, I may laugh at how naive I was. I may also find that an idea which later mattered was already hiding in an offhand follow-up question.
 
 If this little archive has a wish, it is that we occasionally look back while chasing the next astonishing thing. **Keep exploring. Keep questioning. May we never lose the nerve to ask.**
+
+---
+
+[License](LICENSE)

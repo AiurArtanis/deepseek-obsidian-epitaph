@@ -117,13 +117,12 @@
   },
   "remote_repository": {
     "url": "https://github.com/AiurArtanis/deepseek-obsidian-epitaph",
-    "visibility": "private",
-    "ci": "See GitHub Actions for commit-specific remote verification."
+    "ci": "See GitHub Actions for commit-specific remote verification.",
+    "visibility_at_verification": "private"
   },
   "limits": [
     "Other AI providers require an adapter after export-field inspection.",
-    "Conversion only; additional tools and human review are needed for sync, knowledge extraction and retrieval Q&A.",
-    "No open-source license selected."
+    "Conversion only; additional tools and human review are needed for sync, knowledge extraction and retrieval Q&A."
   ],
   "web_source_revision": {
     "version": "1.1.0",

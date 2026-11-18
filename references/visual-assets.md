@@ -44,3 +44,5 @@
 ## 归档流程图
 
 中英文 README 使用从 [同一份 HTML](../assets/diagrams/chat-archive.html) 导出的 PNG。直接打开源文件查看中文，地址后加 `?lang=en` 查看英文。按 960 或 360 CSS 像素宽度排版，截取 `main` 的完整高度，以两倍分辨率导出到 `assets/pics/chat-archive-{zh,en}[-mobile].png`。小屏版把用途改为纵向排列，书页、时间轴和气泡图标均绘制在 HTML 内。
+
+MIT 适用于本项目的原创软件。截图中的第三方界面、标识及第三方内容的权利归各自权利人。
